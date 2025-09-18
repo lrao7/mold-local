@@ -4,7 +4,6 @@ go 1.18
 
 require (
 	github.com/go-playground/assert/v2 v2.2.0
-	github.com/gosimple/slug v1.15.0
 	github.com/segmentio/go-camelcase v0.0.0-20160726192923-7085f1e3c734
 	github.com/segmentio/go-snakecase v1.2.0
 	github.com/stretchr/testify v1.10.0
