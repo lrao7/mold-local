@@ -1,0 +1,22 @@
+on:
+  push:
+  pull_request:
+jobs:
+  snyk-go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - uses: snyk/actions/golang@0.4.0
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          command: test
+      - uses: snyk/actions/golang@0.4.0
+        if: github.event_name == 'push'
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          command: monitor
