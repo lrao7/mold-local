@@ -9,6 +9,7 @@ require (
 	github.com/segmentio/go-snakecase v1.2.0
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/text v0.21.0
+	github.com/onsi/ginkgo v1.11.0
 )
 
 require (
