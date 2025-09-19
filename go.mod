@@ -16,4 +16,5 @@ require (
 	github.com/gosimple/unidecode v1.0.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	github.com/LeaguePlatform/backend-modules/backend-extensions v0.0.0-20250808160653-d1fd2bdc1d56
 )
